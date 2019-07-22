@@ -152,69 +152,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-关于博客的搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/22/关于博客的搭建/">a</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/22/关于博客的搭建/" class="archive-article-date">
-  	<time datetime="2019-07-22T05:44:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>  title: 1<br>  date: 2019-7-22<br>中文乱码测试</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/22/关于博客的搭建/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -222,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/22/hello-world/">��������.....</a>
+      <a class="article-title" href="/2019/07/22/hello-world/">关于如何搭建自己的个人博客</a>
     </h1>
   
 
@@ -235,16 +172,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>the first one </p>
-<h2 id="about-me"><a href="#about-me" class="headerlink" title="about me"></a>about me</h2><h3 id="if-you-want-to-git-a-same-the-blog-please-contanct-……"><a href="#if-you-want-to-git-a-same-the-blog-please-contanct-……" class="headerlink" title="if you want to git a same the blog please contanct ……."></a>if you want to git a same the blog please contanct …….</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">More info: [Writing](https://hexo.io/docs/writing.html)</span><br><span class="line"></span><br><span class="line">### Run server</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>第一步</p>
+<h2 id="前期工具"><a href="#前期工具" class="headerlink" title="前期工具"></a>前期工具</h2><p>安装好（Git  和  Node.js    //直接百度官网下载） github账号（官网注册并验证邮箱）<br>```<br>1.1 在GitHub创建个人创库，创库名建议与用户名一样，然后加后缀.github.io<br>如(linguanyu.github.io) 搭建成功后将通过这个网址来访问你的博客。</p>
+<p>1.2打开Git Bash Here 执行$hexo ssh-keygen -t rsa -C “邮件地址” 按三次回车。在用户里找到.ssh\id_rsa.pub 文件  打开复制粘贴到githu的设置 SSH and GPG Keys-Key里面。</p>
+<p>1.3在Git Bash Here 执行<br>$ git config –global user.name “liuxianan”// 你的github用户名，非昵称<br>$ git config –global user.email  “<a href="mailto:xxx@qq.com" target="_blank" rel="noopener">xxx@qq.com</a>“// 填写你的github注册邮箱</p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>2.1打开Git Bash Here执行 $ npm install -g hexo    //安装hexo<br>2.2在电脑盘里新建一个文件夹 用来存放个人博客的相关数据<br>2.3 在新建的文件里 单击鼠标右键 Git Bash Here 执行 $ hexo init  //初始化<br>$ hexo g                  // 生成<br>$ hexo s                  // 启动服务<br>打开浏览器  输入：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>  即可看到内容。<br>2.4 打开Git Bash Here执行 hexo d      //发布 </p>
+<h3 id="没了"><a href="#没了" class="headerlink" title="没了"></a>没了</h3><p>发布成功后 即可在浏览器上输入https://你的仓库名 即可访问</p>
+<p>写给自己的<br>如果你想搭建自己的免费网站  可以百度  或者 从contact me…. </p>
 
       
 
